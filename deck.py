@@ -36,6 +36,24 @@ class Card() :
     def __repr__(self) :
         return self.__str__()
 
+    def __lt__(self, other_card) :
+        return self.rank < other_card.rank
+
+    def __le__(self, other_card) :
+        return self.rank <= other_card.rank
+
+    def __gt__(self, other_card) :
+        return self.rank > other_card.rank
+
+    def __ge__(self, other_card) :
+        return self.rank >= other_card.rank
+
+    def __eq__(self, other_card) :
+        return self.rank == other_card.rank
+
+    def __ne__(self, other_card) :
+        return self.rank != other_card.rank
+
 class Deck() :
     """ A deck of cards. Contains a certain number of cards and allows the 
     most common deck operations like shuffling, sorting, dealing, etc.
@@ -49,6 +67,16 @@ class Deck() :
         self.size = len(self.cards)
 
         self.set_suit_order()
+
+    def __iter__(self) :
+        """ Iterate over the cards of the deck. """
+        return (card for card in self.cards)
+
+    def __getitem__(self, key) :
+        return self.cards[key]
+    
+    def __setitem__(self, key, value) :
+        self.cards[key] = value
 
     def set_suit_order(self, suit_order=None) :
         """ Define in which case cards of same rank are to be ordered (both 
