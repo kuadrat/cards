@@ -111,7 +111,7 @@ for suit in ['Hearts', 'Diamonds', 'Spades', 'Clubs'] :
         rank = rank + 11
         card = Card(rank=rank, suit=suit, name=name)
         cards.append(card)
-FrenchDeck = Deck(cards)
+french_deck = Deck(cards)
 
 # Create a 36 card Swiss-German Deck
 cards = []
@@ -123,7 +123,7 @@ for suit in ['Rosen', 'Schellen', 'Schilten', 'Eicheln'] :
         rank = rank + 10
         card = Card(rank=rank, suit=suit, name=name)
         cards.append(card)
-SwissDeck = Deck(cards)
+swiss_deck = Deck(cards)
 
 # Create the 56 card Tichu deck
 cards = []
@@ -141,5 +141,5 @@ phoenix = Card(rank=14.5, suit='Special', name='Phoenix')
 dragon = Card(rank=15, suit='Special', name='Dragon', shortname='Dragon')
 for card in [dog, mahjongg, phoenix, dragon] :
     cards.append(card)
-TichuDeck = Deck(cards)
+tichu_deck = Deck(cards)
 
