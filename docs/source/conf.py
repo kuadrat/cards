@@ -12,15 +12,15 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('./playing_cards'))
-sys.path.insert(0, os.path.abspath('../playing_cards'))
-sys.path.insert(0, os.path.abspath('../../playing_cards'))
-sys.path.insert(0, os.path.abspath('../../../playing_cards'))
+sys.path.insert(0, os.path.abspath('./'))
+sys.path.insert(0, os.path.abspath('../'))
+sys.path.insert(0, os.path.abspath('../../'))
+sys.path.insert(0, os.path.abspath('../../../'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'cards'
+project = 'playing_cards'
 copyright = '2020, Kevin Kramer'
 author = 'Kevin Kramer'
 

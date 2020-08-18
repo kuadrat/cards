@@ -1,7 +1,7 @@
-cards
-=====
+playing_cards
+=============
 
 .. toctree::
    :maxdepth: 4
 
-   cards
+   playing_cards
